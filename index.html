@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quark Advisory</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #33ff33;
+      font-family: 'Fira Code', monospace;
+      margin: 0;
+      padding: 0;
+      text-shadow: 0 0 2px #33ff33;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1, h2 {
+      color: #33ff33;
+      border-bottom: 1px dashed #33ff33;
+      padding-bottom: 5px;
+    }
+    .flicker-title {
+      font-size: 3em;
+      letter-spacing: 0.1em;
+      text-shadow: 0 0 5px #33ff33, 0 0 10px #33ff33;
+      animation: flicker 2s infinite;
+    }
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+      20%, 24%, 55% { opacity: 0.4; }
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      border: 1px dashed #33ff33;
+      padding: 15px;
+      margin-bottom: 15px;
+      background: rgba(0,0,0,0.75);
+      box-shadow: 0 0 10px #33ff33;
+      transition: background 0.3s ease;
+    }
+    li:hover {
+      animation: glitch 0.4s linear;
+      background-color: #1a1a1a;
+    }
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 red; }
+      25% { text-shadow: -2px 0 blue; }
+      50% { text-shadow: 2px 0 green; }
+      75% { text-shadow: -2px 0 purple; }
+      100% { text-shadow: 0 0 #33ff33; }
+    }
+    form input, form textarea {
+      width: 100%;
+      background: #0d0d0d;
+      color: #33ff33;
+      border: 1px solid #33ff33;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-family: 'Fira Code', monospace;
+    }
+    form button {
+      background-color: #33ff33;
+      color: #0d0d0d;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: 'Fira Code', monospace;
+    }
+    form button:hover {
+      background-color: #00cc00;
+    }
+    .footer {
+      font-size: 0.9em;
+      color: #777;
+      margin-top: 40px;
+      text-align: center;
+    }
+    a {
+      color: #33ff33;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="flicker-title">QUARK ADVISORY</h1>
+      <p><em>Truthful Guidance for Early Stage Web3 Startups. Smart strategy for founders who want the truth before the funding.</em></p>
+    </header>
+
+    <section>
+      <h2>What Makes Us Different</h2>
+      <p>We’re not here to build. We’re not here to hype you up.</p>
+      <p>Quark Advisory gives founders a fresh, unfiltered outside-in perspective. We tell you what’s working and what’s not. We ask the hard questions you’re too close to see, and we give written, actionable feedback that your team can run with.</p>
+    </section>
+
+    <section>
+      <h2>How We Work</h2>
+      <p>No one knows your company better than you do. We hold up the mirror so you can see what you’re missing. We give you written strategies and targeted feedback so you can make smart decisions and spend more time growing, not figuring it out.</p>
+    </section>
+
+    <section>
+      <h2>Flexible, No-Drama Engagements</h2>
+      <p>No bloated retainers. No lock-you-in contracts. Pay for what you need, load up on hours, or bring us in for targeted reviews.</p>
+    </section>
+
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li><strong>Pitch Perfecting:</strong> Deck review, live pitch coaching, and founding team story development.</li>
+        <li><strong>Messaging & Branding:</strong> Strategic narrative clarity, team bios, tone-of-voice guidance, and brand audit.</li>
+        <li><strong>Go-to-Market Feedback:</strong> Launch timing, CTA refinement, and growth campaign alignment.</li>
+        <li><strong>Whitepaper & Litepaper Reviews:</strong> We’ll read, redline, and respond. Giving you strategic and narrative feedback from an external lens.</li>
+        <li><strong>Strategic Partnerships:</strong> Partnership roadmap, outreach scripts, intro facilitation (when relevant).</li>
+        <li><strong>Sales & Funnel Architecture:</strong> Funnel strategy doc, CRM structure overview, growth alignment guide.</li>
+        <li><strong>Specialized Support:</strong> Need help with tokenomics, website design, or KOL sourcing? We tap our network of trusted partners to plug you into the expertise you need—without the fluff.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/manjwrjp" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p>Email: <a href="mailto:hello@quarkadvisory.com">hello@quarkadvisory.com</a></p>
+      <p><a href="https://www.linkedin.com/in/lkeyfauver/" target="_blank">Founder: Lindsay Keyfauver</a></p>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Quark Advisory. Smart strategy for founders who want the truth before the funding.</p>
+    </footer>
+  </div>
+</body>
+</html>
